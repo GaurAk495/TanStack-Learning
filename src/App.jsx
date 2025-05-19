@@ -4,6 +4,7 @@ import Products from "./pages/Products";
 import Product from "./pages/Product";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
+import InfinteScroll from "./pages/InfinteScroll";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/post/:id" element={<Product />}></Route>
+        <Route path="/post/:id" element={<Product />} />
+        <Route path="/infinteScroll" element={<InfinteScroll />} />
       </Routes>
     </>
   );
